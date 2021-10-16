@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+}
+
+html {
+  font-family: "Noto Sans Display", sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+html[data-theme=day] .container,
+.container {
+  background: #5feee1;
+  background: -webkit-gradient(linear, left top, right top, color-stop(29%, #5feee1), color-stop(70%, rgba(75, 141, 210, 0.8211659664)));
+  background: linear-gradient(90deg, #5feee1 29%, rgba(75, 141, 210, 0.8211659664) 70%);
+}
+
+html[data-theme=night] .container {
+  background: #5f83ee;
+  background: radial-gradient(circle, rgba(95, 131, 238, 0.6979166667) 28%, rgba(6, 42, 80, 0.8211659664) 70%);
+}
+
+.inner {
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.current {
+  text-align: center;
+  margin-bottom: 4em;
+  border: 1px dotted #ffffff;
+}
+.current__city {
+  font-size: 3em;
+}
+.current__description {
+  font-size: 1.5em;
+}
+.current__temperature {
+  font-size: 4em;
+}
+
+.forecast {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 4em;
+}
+.forecast__item {
+  text-align: center;
+}
+.forecast__time {
+  padding-bottom: 1em;
+  padding-left: 1em;
+  color: #042683;
+}
+.forecast__icon {
+  width: 50px;
+  height: 50px;
+  padding-bottom: 1em;
+}
+.forecast__temperature {
+  font-size: 1.6em;
+}
+
+.details__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2em;
+}
+.details__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.details__name {
+  margin-bottom: 1em;
+  color: #042683;
+}
+.details__value {
+  font-size: 1.6em;
+}
+
+html.transition,
+html.transition * {
+  -webkit-transition: all 6000ms !important;
+  transition: all 6000ms !important;
+  -webkit-transition-delay: 2000ms !important;
+          transition-delay: 2000ms !important;
+}
+
+.icon__01d,
+.icon__01n,
+.icon__02d,
+.icon__02n,
+.icon__03d,
+.icon__03n,
+.icon__04d,
+.icon__04n,
+.icon__09d,
+.icon__09n,
+.icon__10d,
+.icon__10n,
+.icon__11n,
+.icon__11n,
+.icon__13d,
+.icon__13n,
+.icon__50d,
+.icon__50n {
+  background-size: 50px;
+  background-repeat: no-repeat;
+}
+
+.icon__01d,
+.icon__01n {
+  background-image: url("../images/01d.png");
+}
+
+.icon__02d,
+.icon__02n {
+  background-image: url("../images/02d.png");
+}
+
+.icon__03d,
+.icon__03n {
+  background-image: url("../images/03d.png");
+}
+
+.icon__04d,
+.icon__04n {
+  background-image: url("../images/04d.png");
+}
+
+.icon__09d,
+.icon__09n {
+  background-image: url("../images/09d.png");
+}
+
+.icon__10d,
+.icon__10n {
+  background-image: url("../images/10d.png");
+}
+
+.icon__11n,
+.icon__11n {
+  background-image: url("../images/11d.png");
+}
+
+.icon__13d,
+.icon__13n {
+  background-image: url("../images/13d.png");
+}
+
+.icon__50d,
+.icon__50n {
+  background-image: url("../images/50d.png");
+}/*# sourceMappingURL=style.css.map */
