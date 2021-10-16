@@ -1,2 +1,3 @@
-/styles;
-/js/weather.js;
+styles/
+js/weather.js
+.vscode
